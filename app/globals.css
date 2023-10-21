@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+/* * {
+  font-family: "Rubik-Regular";
+} */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+@layer utilities {
+  .room-clip-md {
+    clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .clip-img-1 {
+    clip-path: polygon(0 0, 78% 0, 95% 100%, 0 100%);
+  }
+  .clip-img-2 {
+    clip-path: polygon(0 0, 95% 0, 78% 100%, 0 100%);
+  }
+  .clip-img-3 {
+    clip-path: polygon(0 0, 78% 0, 95% 100%, 0 100%);
+  }
+  .clip-img-4 {
+    clip-path: polygon(20.5% 61%, 50.5% 0, 100% 100%, 39.7% 100%);
+  }
+}
