@@ -8,7 +8,7 @@ async function Rooms() {
       <h1 className="text-5xl px-12 text-primary font-light m-4">our rooms</h1>
       <div
         dir="rtl"
-        className="flex flex-initial flex-row-reverse overflow-y-scroll md:gap-8 snap-x px-8 py-10"
+        className="flex flex-initial flex-row-reverse overflow-x-scroll md:gap-8 snap-x px-8 py-10"
       >
         {rooms.map((room) => (
           <Room room={room} />
