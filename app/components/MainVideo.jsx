@@ -6,7 +6,7 @@ function MainVideo() {
       autoPlay={true}
       loop={true}
       src={
-        "https://res.cloudinary.com/dcb9wy3kf/video/upload/v1696493609/main-video.mp4"
+        "https://res.cloudinary.com/danit332d/video/upload/v1697906247/main-video.mp4"
       }
       className="object-cover -z-20 relative h-screen w-screen"
     />
