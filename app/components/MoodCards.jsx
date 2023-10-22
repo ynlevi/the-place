@@ -2,7 +2,7 @@ import MoodCard from "./MoodCard";
 
 function MoodCards() {
   return (
-    <div className="flex flex-col-reverse lg:flex-row lg:h-[85vh] lg:-mt-24 mb-16 md:w-11/12 gap-8 lg:gap-0 ">
+    <div className="flex flex-col-reverse lg:flex-row lg:h-[85vh] lg:-mt-24 mb-16 gap-8 md:gap-8 lg:gap-0 justify-around">
       <div className="flex relative lg:w-9/12 ">
         <div className="flex flex-col w-8/12 h-64 sm:h-80 lg:h-[30rem] self-end">
           {cards.map((card, i) => (

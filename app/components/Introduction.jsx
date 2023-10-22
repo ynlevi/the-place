@@ -4,7 +4,7 @@ const Introduction = async () => {
   const introData = await fetchDataFromStrapi("/api/description");
   const { title, p } = introData.attributes;
   return (
-    <div className="flex flex-col md:flex-row  justify-between items-center my-10 w-11/12  mx-auto border-r-4 md:border-l-8 md:border-r-0 md:pr-0 md:pl-24 bg-slate-50 px-4 border-primary ">
+    <div className="flex flex-col md:flex-row  justify-between items-center my-10 w-11/12  mx-auto border-r-4 md:border-l-8 md:border-r-0 md:pr-0 md:pl-24 bg-slate-50 px-4 border-primary">
       <p className="md:w-[30vw] text-primary  whitespace-pre-line leading-7 md:leading-8 py-8 text-xl">
         <span className="text-6xl font-handwrite">{title} </span>
         {p[0].children[0].text}
