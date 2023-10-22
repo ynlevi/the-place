@@ -7,8 +7,7 @@ function Room({ room }) {
       <Link
         href={`/rooms/${room.id.toString()}`}
         target="_blank"
-        className="max-w-xs lg:max-w-sm rounded-lg p-4 my-4 flex-shrink-0 snap-start scroll-m-4 snap-mandatory bg-secondary text-primary flex flex-col gap-6 ml-9 duration-500 md:hover:shadow-2xl drop-shadow-sm "
-        dir="ltr"
+        className={`max-w-xs lg:max-w-sm rounded-lg p-4 my-4 flex-shrink-0 snap-start scroll-m-4 snap-mandatory bg-secondary text-primary flex flex-col gap-6 ml-9 duration-500 md:hover:shadow-2xl drop-shadow-sm scroll-ml-16 `}
       >
         <h2 className="text-3xl md:text-4xl font-light">
           {room.attributes.name}
