@@ -15,24 +15,29 @@ function Header() {
         }}
       >
         <div className="fixed z-20 inset-0 flex h-fit justify-between items-center w-11/12 lg:w-10/12 mx-auto ">
-          <button>
+          <butto id="menu">
             <VscMenu size={40} className="text-white m-4 " />
-          </button>
+          </butto>
           <div className="text-end flex text-white gap-6">
             <div className=" hidden md:flex gap-6 top-[82vh] left-0 static flex-row ">
               <button
                 href="#"
+                id="instegram"
                 className="border-2 rounded-full w-10 h-10 border-white "
               >
                 <AiFillInstagram size={23} className="m-auto" />
               </button>
-              <button className="border-2 rounded-full w-10 h-10  border-white  ">
+              <button
+                className="border-2 rounded-full w-10 h-10  border-white  "
+                id="facebbok"
+              >
                 <FaFacebookF size={20} className="m-auto" />
               </button>
             </div>
             <Link
               className="text-lg border-2 text-primary border-white rounded-full flex items-center  "
               href="/contact"
+              id="contact"
             >
               <p className="w-fit bg-white  rounded-full px-2 py-1 text-xl tracking-wide">
                 Let's Chat
@@ -45,11 +50,15 @@ function Header() {
       <div className="md:hidden flex gap-6 flex-col fixed -z-10 top-[82vh] left-8 text-white ">
         <button
           href="#"
+          id="instegram"
           className="border-2 rounded-full w-10 h-10 border-white "
         >
           <AiFillInstagram size={23} className="m-auto" />
         </button>
-        <button className="border-2 rounded-full w-10 h-10 border-white ">
+        <button
+          className="border-2 rounded-full w-10 h-10 border-white "
+          id="facebook"
+        >
           <FaFacebookF size={20} className="m-auto" />
         </button>
       </div>
